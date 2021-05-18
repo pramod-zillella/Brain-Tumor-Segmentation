@@ -1,6 +1,6 @@
 
 # Brain-Tumor-Segmentation
-
+![Predicted](https://user-images.githubusercontent.com/63542593/118610533-798cf800-b7d9-11eb-97d5-44df8de6fb91.png)
 ## Background
 Surge in cancer cases globally have led to increase in computer aided diagnosis and research in biomedical imaging and diagnostic radiology. The task of manual segmentation is rigorous, time-consuming and accurate tumor segmentation depends on the expertise of the pathologist, incorrect segmentation will cause in recurrent brain cancer or long lasting side-effects. 
 
@@ -61,4 +61,4 @@ We calculate the proposed methods results using the statistical parameters-Dice 
 
 (Region in green indicates the whole tumor, region in  blue indicates the enhancing tumor region and the region in red indicates the tumor core)
 
-![Predicted](https://user-images.githubusercontent.com/63542593/118610533-798cf800-b7d9-11eb-97d5-44df8de6fb91.png)
+
