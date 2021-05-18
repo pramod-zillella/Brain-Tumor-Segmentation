@@ -6,7 +6,7 @@ Surge in cancer cases globally have led to increase in computer aided diagnosis 
 
 
 ## Introduction
-Automatic brain tumor segmentation is one such task which will assist, improve doctors and radiologists accuracy in detecting and delineating the tumor sub-type. Automated brain tumor segmentation is highly desirable as it will help doctors learn about the prognostic factors and monitor the progression of the tumor and plan for treatment. For this we propose a method based on modified 3DUNet architecture which produced state-of-the-art segmentation results on the Brats 2020 Challenge.
+Automatic brain tumor segmentation is one such task which will assist, improve doctors and radiologists accuracy in detecting and delineating the tumor sub-type. Automated brain tumor segmentation is highly desirable as it will help doctors learn about the prognostic factors and monitor the progression of the tumor and plan for treatment. For this we propose a method based on modified 3DUNet architecture which produced state-of-the-art segmentation results on the [Brats 2020](https://www.med.upenn.edu/cbica/brats2020/data.html) Challenge.
 
 ## Network Architecture
 ![Project-architecture](https://user-images.githubusercontent.com/63542593/118623303-bd85fa00-b7e5-11eb-8b5d-02c255860e4e.jpg)
@@ -33,7 +33,10 @@ We calculate the proposed methods results using the statistical parameters-Dice 
 | Median  | 0.87871  | 0.91993  | 0.91058  | 0.89553  | 0.94956  | 0.90561  | 0.99985  | 0.99918  | 0.9998  | 1.73205 | 3.16228  | 3  |
 | 25quantile  | 0.80214  | 0.87042  | 0.82128  | 0.82766  | 0.90596 | 0.81328  | 0.99957  | 0.99858  | 0.9995  | 1  | 2.23607  | 1.73205  |
 | 75quantile  | 0.92648  | 0.94299  | 0.93417  | 0.94811  | 0.97373 | 0.95586  | 0.99996  | 0.99958  | 0.9999  | 3  | 5.47723  | 5.47723  |
-         
+
+### [Brats 2020 Challenge Leaderboard](https://www.cbica.upenn.edu/BraTS20/lboardValidation.html)
+
+Team - Zillella 
 ### Visualization Results
          
 #### Axial View 
