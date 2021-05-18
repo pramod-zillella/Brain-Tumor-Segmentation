@@ -61,4 +61,5 @@ We calculate the proposed methods results using the statistical parameters-Dice 
 
 (Region in green indicates the whole tumor, region in  blue indicates the enhancing tumor region and the region in red indicates the tumor core)
 
-
+## Conclusion
+With the proposed modified 3DUNet architecture state-of-the-art segmentation results for Enhancing tumor were obtained with approximatelty 1% improvement in dice coefficient when compared to the winners of Brats 2020 Challenge. The model is computationally very efficient taking less than 2 seconds to segment brain tumors from the whole brain MRI scan. 
