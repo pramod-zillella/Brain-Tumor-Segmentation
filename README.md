@@ -13,9 +13,15 @@ Automatic brain tumor segmentation is one such task which will assist, improve d
 
 ## Loss Function
 
+
+
+The proposed model uses Modified soft dice loss to optimize the loss function. Individual dice loss for the three labels (Enhancing tumor, Whole tumor, and Tumor core) are computed and added for the final dice loss, and the optimization is performed on the individual dice loss of the labels.
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/118627620-831e5c00-b7e9-11eb-9dd6-483672dc303e.png" width="700">             
 </p>
+
+In the above equations, ![CodeCogsEqn (3)](https://user-images.githubusercontent.com/63542593/118631424-1c02a680-b7ed-11eb-9c62-db6334b783ac.png) indicates the 3x144x144x128 matrix of the ground truth annotation and ![CodeCogsEqn (4)](https://user-images.githubusercontent.com/63542593/118631431-1dcc6a00-b7ed-11eb-83d6-6244f2c24035.png) indicates the 3x144x144x128 matrix of the predicted segmentation output by the network and  \mathbit{\epsilon} indicates the smoothing factor which set to 1
 
 ### Quantitative Results
 We calculate the proposed methods results using the statistical parameters-Dice Coefficient, Sensitivity, Specificity and Hausdorff Distance for Enhancing tumor, Whole tumor and Tumor core for the validation set. 
