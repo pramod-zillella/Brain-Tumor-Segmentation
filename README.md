@@ -62,7 +62,7 @@ Team - Zillella
 </p>        
 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Brain MRI &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Ground Truth &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Predicted Tumor
 
-![#f03c15](https://via.placeholder.com/15/ff0000/000000?text=+) `Region in red indicates the whole tumor` ![#c5f015](https://via.placeholder.com/15/00ff00/000000?text=+) `Region in green indicates the tumor core` ![#1589F0](https://via.placeholder.com/15/0000ff/000000?text=+) `Region in  blue indicates the enhancing tumor region`
+&nbsp; &nbsp; &nbsp; &nbsp; ![#f03c15](https://via.placeholder.com/15/ff0000/000000?text=+) `Region in red indicates the whole tumor` ![#c5f015](https://via.placeholder.com/15/00ff00/000000?text=+) `Region in green indicates the tumor core` ![#1589F0](https://via.placeholder.com/15/0000ff/000000?text=+) `Region in  blue indicates the enhancing tumor region`
 
 ## Conclusion
 With the proposed modified 3DUNet architecture state-of-the-art segmentation results for Enhancing tumor were obtained with approximatelty 1% improvement in dice coefficient when compared to the winners of Brats 2020 Challenge. The model is computationally very efficient taking less than 2 seconds to segment brain tumors from the whole brain MRI scan. 
