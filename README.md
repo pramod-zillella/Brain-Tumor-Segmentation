@@ -4,6 +4,7 @@
 ## Background
 Surge in cancer cases globally have led to increase in computer aided diagnosis and research in biomedical imaging and diagnostic radiology. The task of manual segmentation is rigorous, time-consuming and accurate tumor segmentation depends on the expertise of the pathologist, incorrect segmentation will cause in recurrent brain cancer or long lasting side-effects. 
 
+For accessing the interactive notebooks:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Pramod04121999/Brain-Tumor-Segmentation/HEAD)
 
 ## Introduction
