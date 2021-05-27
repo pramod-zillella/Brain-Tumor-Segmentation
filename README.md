@@ -4,6 +4,7 @@
 ## Background
 Surge in cancer cases globally have led to increase in computer aided diagnosis and research in biomedical imaging and diagnostic radiology. The task of manual segmentation is rigorous, time-consuming and accurate tumor segmentation depends on the expertise of the pathologist, incorrect segmentation will cause in recurrent brain cancer or long lasting side-effects. 
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Pramod04121999/Brain-Tumor-Segmentation/HEAD)
 
 ## Introduction
 Automatic brain tumor segmentation is one such task which will assist, improve doctors and radiologists accuracy in detecting and delineating the tumor sub-type. Automated brain tumor segmentation is highly desirable as it will help doctors learn about the prognostic factors and monitor the progression of the tumor and plan for treatment. For this we propose a method based on modified 3DUNet architecture which produced state-of-the-art segmentation results on the [Brats 2020](https://www.med.upenn.edu/cbica/brats2020/data.html) Challenge.
