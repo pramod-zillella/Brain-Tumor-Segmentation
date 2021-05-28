@@ -7,6 +7,15 @@ Surge in cancer cases globally have led to increase in computer aided diagnosis 
 For accessing the interactive notebooks:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Pramod04121999/Brain-Tumor-Segmentation/HEAD)
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Network Architecture](#network-architecture)
+3. [Loss Function](#loss-function)
+4. [Segmentation Results](#segmentation-results)
+    * [Quantitative Results](#quantitative-results)
+    * [Visualization Results](#visualization-results)  
+5. [Conclusion](#conclusion)
+
 ## Introduction
 Automatic brain tumor segmentation is one such task which will assist, improve doctors and radiologists accuracy in detecting and delineating the tumor sub-type. Automated brain tumor segmentation is highly desirable as it will help doctors learn about the prognostic factors and monitor the progression of the tumor and plan for treatment. For this we propose a method based on modified 3DUNet architecture which produced state-of-the-art segmentation results on the [Brats 2020](https://www.med.upenn.edu/cbica/brats2020/data.html) Challenge.
 
@@ -14,9 +23,6 @@ Automatic brain tumor segmentation is one such task which will assist, improve d
 ![Project-architecture](https://user-images.githubusercontent.com/63542593/118623303-bd85fa00-b7e5-11eb-8b5d-02c255860e4e.jpg)
 
 ## Loss Function
-
-
-
 The proposed model uses Modified soft dice loss to optimize the loss function. Individual dice loss for the three labels (Enhancing tumor, Whole tumor, and Tumor core) are computed and added for the final dice loss, and the optimization is performed on the individual dice loss of the labels.
 
 <p align="center">
@@ -25,8 +31,9 @@ The proposed model uses Modified soft dice loss to optimize the loss function. I
 
 In the above equations, ![CodeCogsEqn (3)](https://user-images.githubusercontent.com/63542593/118631424-1c02a680-b7ed-11eb-9c62-db6334b783ac.png) indicates the 3x144x144x128 matrix of the ground truth annotation and ![CodeCogsEqn (4)](https://user-images.githubusercontent.com/63542593/118631431-1dcc6a00-b7ed-11eb-83d6-6244f2c24035.png) indicates the 3x144x144x128 matrix of the predicted segmentation output by the network and ![equation (1)](https://user-images.githubusercontent.com/63542593/119784572-fad83f00-beeb-11eb-8f8e-8770cc7c2999.png) indicates the smoothing factor which set to 1
 
+## Segmentation Results
 ### Quantitative Results
-We calculate the proposed methods results using the statistical parameters-Dice Coefficient, Sensitivity, Specificity and Hausdorff Distance for Enhancing tumor, Whole tumor and Tumor core for the validation set. 
+We calculate the proposed methods results using the statistical parameters-Dice Coefficient, Sensitivity, Specificity and Hausdorff Distance for Enhancing tumor, Whole tumor and Tumor core for the validation set. Team - Zillella  [Brats 2020 Challenge Leaderboard](https://www.cbica.upenn.edu/BraTS20/lboardValidation.html)
 
 | Parameters  | Dice_ET | Dice_WT | Dice_TC | Sensitivity_ET | Sensitivity_WT | Sensitivity_TC | Specificity_ET | Specificity_WT | Specificity_TC | Hausdorff95_ET | Hausdorff95_WT | Hausdorff95_TC |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
@@ -36,9 +43,6 @@ We calculate the proposed methods results using the statistical parameters-Dice 
 | 25quantile  | 0.80214  | 0.87042  | 0.82128  | 0.82766  | 0.90596 | 0.81328  | 0.99957  | 0.99858  | 0.9995  | 1  | 2.23607  | 1.73205  |
 | 75quantile  | 0.92648  | 0.94299  | 0.93417  | 0.94811  | 0.97373 | 0.95586  | 0.99996  | 0.99958  | 0.9999  | 3  | 5.47723  | 5.47723  |
 
-### [Brats 2020 Challenge Leaderboard](https://www.cbica.upenn.edu/BraTS20/lboardValidation.html)
-
-Team - Zillella 
 ### Visualization Results
          
 #### Axial View 
